@@ -37,7 +37,7 @@ This project performs Exploratory Data Analysis (EDA) on the Iris dataset for th
 - **Live Demo**: Hosted on GitHub Pages
 
 ## Screenshots 📸
-![Hero Section](images/screenshot-hero.jpg) *(Add via browser screenshot)*  
+![Hero Section](images/screenshot-hero.jpg)
 ![EDA Visualizations](images/screenshot-eda.jpg)
 
 ## Live Demo 🌐
