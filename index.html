@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EDA on Iris Dataset by Muzamal Asghar - HEX SOFTWARES Internship, Responsive Dark Theme">
+    <meta name="keywords" content="Muzamal Asghar, EDA, Iris Dataset, HEX SOFTWARES, Data Science, Python, HTML CSS JavaScript">
+    <meta name="author" content="Muzamal Asghar">
+    <title>Muzamal Asghar - Iris EDA Visualization</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Iris EDA Visualization</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" aria-label="Home Section">Home</a></li>
+                <li><a href="#eda" aria-label="EDA Section">EDA</a></li>
+                <li><a href="eda.html" aria-label="Python Script">Python Script</a></li>
+                <li><a href="#contact" aria-label="Contact Section">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="typing-animation">Iris Dataset EDA</h1>
+                <p class="subtitle">Explore Data Insights | Built by Muzamal Asghar</p>
+                <img src="images/data_icon.jpg" alt="Data Icon" class="data-icon" loading="lazy">
+                <a href="#eda" class="cta-button">View EDA</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="section-overlay"></div>
+        <div class="section-content">
+            <h2>About This Project 🌟</h2>
+            <p>This project performs Exploratory Data Analysis (EDA) on the Iris dataset for the HEX SOFTWARES Data Science Internship. It includes data cleaning, statistical analysis, and interactive visualizations using Python and Chart.js, presented in a modern, dark-themed website.</p>
+        </div>
+    </section>
+
+    <section id="eda" class="section">
+        <div class="section-overlay"></div>
+        <div class="section-content">
+            <h2>EDA Visualizations 📊</h2>
+            <div class="eda-container">
+                <h3>Summary Statistics</h3>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Mean</th>
+                            <th>Std</th>
+                            <th>Min</th>
+                            <th>Max</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sepal Length</td>
+                            <td>5.84</td>
+                            <td>0.83</td>
+                            <td>4.3</td>
+                            <td>7.9</td>
+                        </tr>
+                        <tr>
+                            <td>Sepal Width</td>
+                            <td>3.06</td>
+                            <td>0.44</td>
+                            <td>2.0</td>
+                            <td>4.4</td>
+                        </tr>
+                        <tr>
+                            <td>Petal Length</td>
+                            <td>3.76</td>
+                            <td>1.77</td>
+                            <td>1.0</td>
+                            <td>6.9</td>
+                        </tr>
+                        <tr>
+                            <td>Petal Width</td>
+                            <td>1.20</td>
+                            <td>0.76</td>
+                            <td>0.1</td>
+                            <td>2.5</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Interactive Pairplot (Sepal Length vs Petal Length)</h3>
+                <canvas id="pairplotChart" class="chart"></canvas>
+                <h3>Correlation Heatmap</h3>
+                <img src="images/heatmap.png" alt="Correlation Heatmap" class="eda-img" loading="lazy">
+                <h3>Feature Distributions</h3>
+                <img src="images/histograms.png" alt="Feature Histograms" class="eda-img" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-overlay"></div>
+        <div class="section-content">
+            <h2>Contact 📬</h2>
+            <form class="contact-form" aria-label="Contact Form">
+                <input type="text" placeholder="Your Name" required aria-required="true">
+                <input type="email" placeholder="Your Email" required aria-required="true">
+                <textarea placeholder="Your Message" rows="5" required aria-required="true"></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/muzamalasgharofficial/" target="_blank" aria-label="LinkedIn Profile">LinkedIn</a>
+                <a href="https://github.com/muzamal478" target="_blank" aria-label="GitHub Profile">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Muzamal Asghar. All rights reserved. | Built with 💜</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
